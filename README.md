@@ -1,6 +1,6 @@
 # Teste para vaga de frontend 
 
-Primeiramente você deve fazer um fork desse projeto para então iniciar os trabalhos, após o teste estar totalmente pronto você deve abrir uma Pull Request de volta para este repo e enviar um email para [labs@pismo.com.br](labs@pismo.com.br) confirmando a entrega.
+Primeiramente você deve fazer um fork desse projeto para então iniciar os trabalhos, após o teste estar totalmente pronto você deve abrir uma Pull Request de volta para este repo e enviar um email para [labs@pismo.com.br](mailto:labs@pismo.com.br) confirmando a entrega.
 
 ## O teste
 
