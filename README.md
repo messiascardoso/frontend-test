@@ -10,7 +10,7 @@ Pode usar qualquer framework de CSS para acelerar o desenvolvimento, pois o resu
 O suporte de navegadores é para IE Edge+. 
 
 ### Coisas que sua web app deve permitir
-- Busca por filmes (Titulo e Diretores)
+- Busca por filmes (Titulo, Diretores e Atores)
 - Listar os filmes com seus respectivos thumbnails
 - Permitir a visualização individual de cada filme
 - Permitir criar uma lista de favoritos e adicionar/remover filmes nela (A lista pode ser somente por sessão não precisa salvar em nenhum banco de dados)
@@ -24,3 +24,26 @@ O suporte de navegadores é para IE Edge+.
 - Testes, testes, testes. Pode usar o que você quiser mas precisa testar o código
 - Conhecimento de FP (Functional Programming)
 
+---
+# Frontend test
+After forking this project you should be ready to start your test. Once you've finished, please, open a Pull Request linking back to this repo, then send an e-mail to [labs@pismo.com.br](mailto:labs@pismo.com.br) to make sure we got your solution.
+
+## Challenge:
+You must create an SPA consuming [Netflix Roulette API](http://netflixroulette.net/api/).  
+Feel free to use any CSS framework to speed up the process - we expect the result to be responsive.   
+Browser support: IE Egde+ minimum.
+
+### Must have:
+- Search for movies (title and directors)
+- List of movies with its respective thumbnails
+- Individual page for each movie
+- Favourites feature (List of favourites + favourite button to add items to the list - you can use sessions, no need of a data base)
+
+### We will be looking for:
+- Clean and clear code
+- Clean and clear HTML
+- Application routes expertise 
+- Git expertise
+- Good level of javascript
+- Tests! (you can use anything, but you have to test your code somehow)
+- FP (functional Programming)
