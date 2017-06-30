@@ -1,36 +1,51 @@
 <h1>Filmes</h1>
+<div class="row">
+    <div class="col-md-9">
+        <form name="formulario" novalidate ng-submit="" class="form-inline ng-invalid ng-invalid-required ng-valid-maxlength ng-dirty ng-valid-parse ng-invalid-email ng-invalid-pattern ng-invalid-minlength">
+            <div class="col-md-3">
+                <div class="form-group label-formulario">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                        <input class="form-control input-lg filtro-lista" id="codvoucher" name="codvoucher" placeholder="Diretor" type="search"
+                            ng-model="codvoucher" required>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3">
+                <div class="form-group label-formulario">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                        <input class="form-control input-lg filtro-lista" id="codvoucher" name="codvoucher" placeholder="Nome" type="search"
+                            ng-model="codvoucher" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <button type="submit" ng-disabled="formulario.$invalid" class="btn btn-primary"><i class="ion-checkmark-round"></i> Voucher Validate</button>
+
+            </div>
+            <div class="col-md-5">
+                <div class="alert {{status}} text-center alert-dismissible" role="alert" ng-show="mensagem.length > 0">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong><i class="ion ion-pricetag"></i>{{mensagem}}: </strong> {{codvoucherAlert}}
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
 
 <div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="http://via.placeholder.com/300x150" alt="...">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
+    <div class="col-sm-6 col-md-2" ng-repeat="filme in filmes">
+        <div class="thumbnail">
+            <img src="{{filme.poster}}" alt="...">
+            <div class="caption">
+                <a ng-href="#/list/{{filme.show_id}}">
+                    <h3>Title:{{filme.show_title}}</h3>
+                </a>
+                <p>Category:{{filme.category}}</p>
+                <p>Rating: {{filme.rating}}</p>
+            </div>
+        </div>
     </div>
-  </div>
-
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="http://via.placeholder.com/300x150" alt="...">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="http://via.placeholder.com/300x150" alt="...">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-</div>
