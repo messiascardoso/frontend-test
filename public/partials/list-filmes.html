@@ -1,64 +1,38 @@
 <!--<div class="row">-->
-    <!--<div class="jumbotron">
-        <div class="container">
-            <div class="page-header">
-                <h1>Example page header <small>Subtext for header</small></h1>
+<div class="row list-filme">
+    <div class="container">
+        <form name="formbusca" ng-submit="submitForm(formbusca.$valid)" class="navbar-form navbar-left" role="search" novalidate>
+            <div class="form-group">
+                <input type="text" name="nome" class="form-control" placeholder="Search" ng-model="query.nome" ng-required="true" ng-minlength="4">
             </div>
-            <div class="col-md-9">
-                <form name="formulario" novalidate ng-submit="" class="form-inline ng-invalid ng-invalid-required ng-valid-maxlength ng-dirty ng-valid-parse ng-invalid-email ng-invalid-pattern ng-invalid-minlength">
-                    <div class="col-md-3">
-                        <div class="form-group label-formulario">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-                                <input class="form-control input-lg filtro-lista" id="codvoucher" name="codvoucher" placeholder="Diretor" type="search" ng-model="codvoucher"
-                                    required>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="form-group label-formulario">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-                                <input class="form-control input-lg filtro-lista" id="codvoucher" name="codvoucher" placeholder="Nome" type="search" ng-model="codvoucher"
-                                    required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <button type="submit" ng-disabled="formulario.$invalid" class="btn btn-primary"><i class="ion-checkmark-round"></i> Voucher Validate</button>
-
-                    </div>
-                    <div class="col-md-5">
-                        <div class="alert {{status}} text-center alert-dismissible" role="alert" ng-show="mensagem.length > 0">
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <strong><i class="ion ion-pricetag"></i>{{mensagem}}: </strong> {{codvoucherAlert}}
-                        </div>
-                    </div>
-
-                </form>
+            <!--<p ng-show="formbusca.query.$invalid && !formbusca.query.$pristine" class="help-block">Nome obrigatório</p>
+                <p ng-show="formbusca.query.$error.minlength" class="help-block">Username no mínimo 3 caracteres.</p>-->
+            <div class="form-group ng-valid ng-invalid ng-pristine ng-dirty">
+                <div class="col-sm-10">
+                    <select name="categoria" class="form-control" required="required" ng-model="query.categoria" ng-required="true">
+                            <option value="director">Diretor</option>
+                            <option value="actor">Ator</option>
+                            <option value="title">Titulo</option>
+                        </select>
+                </div>
             </div>
-
-        </div>
+            <button type="submit" ng-disabled="formbusca.$invalid" class="btn btn-default">Buscar</button>
+        </form>
     </div>
--->
-<!--</div>-->
-<div class="row list-filme" >
-
-<div class="page-header">
-  <h1><small>Subtext for header</small></h1>
 </div>
 
-    <div class="col-sm-6 col-md-2" ng-repeat="filme in filmes">
-        <div class="thumbnail">
-            <img src="{{filme.poster}}" alt="...">
-            <div class="caption">
+<div class="row list-filme-bg">
+    <div class="container">
+        <div class="page-header">
+            <h1><small>Filmes: </small></h1>
+        </div>
+        <div class="col-sm-6 col-md-2" ng-repeat="filme in filmes">
+            <div class="thumbnail">
                 <a ng-href="#/list/{{filme.show_id}}">
-                    <h3>Title:{{filme.show_title}}</h3>
+                <img src="{{filme.poster}}" alt="..." style="height: 250px; width: 100%; display: block;">
                 </a>
-                <p>Category:{{filme.category}}</p>
-                <p>Rating: {{filme.rating}}</p>
             </div>
         </div>
     </div>
-</div>    
+</div>
+</div>

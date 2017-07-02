@@ -13,5 +13,33 @@
 }
 
 .list-filme{
-    padding-top: 1.5%!important;
+    background-color: #333333;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+.list-filme-bg{
+    background-color: #333333;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 10px 0 20px;
+    border-bottom: 1px solid #777;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color:#9e1a1a;
+}
+
+
+
+input.ng-invalid {
+    background-color:#d9534f;
+    border-color: #d43f3a;
+}
+input.ng-valid {
+    background-color:lightgreen;
 }
