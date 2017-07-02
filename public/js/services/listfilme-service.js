@@ -5,6 +5,7 @@ angular.module('netflix').service('Filme', function ($http, config) {
         return $http.get(config.baseUrl+"?director="+director);
     };
 
+    
 
 
 
