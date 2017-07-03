@@ -27,9 +27,11 @@ angular.module('netflix', ['ngResource','ui.router'])
                     controller: 'FilmeDetalheCtrl'
                 })
 
-                
-
-
+                .state('layout.favoritos', {
+                    url: '/favoritos',
+                    templateUrl: 'partials/favoritos.html',
+                    controller: 'FavoritosCtrl'
+                });
 
             $urlRouterProvider.otherwise('/list');
 

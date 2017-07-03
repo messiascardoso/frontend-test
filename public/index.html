@@ -1,48 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Netflix</title>
 
-        <!-- Bootstrap CSS -->
-        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-        <!--Font Awesome -->
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Netflix</title>
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+    <!-- Bootstrap CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <!--Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-    </head>
-    <body ng-app="netflix">
-        <div ui-view></div>
-        <!-- jQuery -->
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-        <!-- Bootstrap JavaScript -->
-        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-        <!--Angularjs-->
-        <script src="bower_components/angular/angular.js"></script>
-        <script src="bower_components/angular-route/angular-route.js"></script>
-        <script src="bower_components/angular-resource/angular-resource.js"></script>
-        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-        
-         <!--main-->
-         <script src="js/main.js"></script>
-         <script src="js/config-value.js"></script>
+</head>
 
-         <!--Services-->
-         <script src="js/services/listfilme-service.js"></script>
-         <script src="js/services/shared-properties.js"></script>
+<body ng-app="netflix">
 
-         <!--Controllers-->
-        <script src="js/controllers/filmes-controller.js"></script>         
-        <script src="js/controllers/filmeDetalhe-controller.js"></script> 
-    </body>
+    <div ui-view></div>
+
+    <!-- jQuery -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--Angularjs-->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <!--main-->
+    <script src="js/main.js"></script>
+    <script src="js/config-value.js"></script>
+
+    <!--Services-->
+    <script src="js/services/listfilme-service.js"></script>
+    <script src="js/services/shared-properties.js"></script>
+
+    <!--Controllers-->
+    <script src="js/controllers/filmes-controller.js"></script>
+    <script src="js/controllers/filmeDetalhe-controller.js"></script>
+    <script src="js/controllers/favoritos-controller.js"></script>
+
+</body>
+
 </html>

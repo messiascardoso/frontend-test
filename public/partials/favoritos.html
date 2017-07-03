@@ -1,0 +1,18 @@
+<div class="row filme-detalhe">
+    <div class="container">
+        <div class="page-header">
+            <h1><small>Filmes: </small></h1>
+        </div>
+        <div class="col-sm-6 col-md-2" ng-repeat="favorito in filmesFavoritos">
+            <div class="thumbnail">
+                <a ng-href="#/list/{{favorito.show_id}}" ng-click="getFilmeSelected(filme)">
+                <img src="{{favorito.poster}}" alt="..." style="height: 250px; width: 100%; display: block;">
+                </a>
+            </div>
+          <button type="button" class="btn btn-danger" ng-click="removeFavorito(favorito)">
+          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>  Deletar
+        </button>
+        </div>
+    </div>
+</div>
+</div>

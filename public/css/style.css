@@ -15,9 +15,18 @@ body{
     background-color: #B9090B;
     border-color: #B9090B;
 }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color:#9e1a1a;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
 
 .list-filme{
-    /*background-color: #333333;*/
     padding-top: 5%;
     padding-bottom: 1%;
 }
@@ -28,12 +37,6 @@ body{
     border-bottom: 1px solid #777;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-    color: #fff;
-    background-color:#9e1a1a;
-}
 
 
 
@@ -48,6 +51,7 @@ input.ng-valid {
 
 .filme-detalhe{
     padding-top: 8.5%;
+    padding-bottom: 5%;
 }
 
 .filme-detalhe p{
