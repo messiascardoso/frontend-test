@@ -1,3 +1,7 @@
+body{
+    background-color: #333333;
+}
+
 .logo{
     width: 100px;
     height: 39px;
@@ -13,12 +17,9 @@
 }
 
 .list-filme{
-    background-color: #333333;
+    /*background-color: #333333;*/
     padding-top: 5%;
     padding-bottom: 1%;
-}
-.list-filme-bg{
-    background-color: #333333;
 }
 
 .page-header {
@@ -36,10 +37,32 @@
 
 
 
-input.ng-invalid {
+/*input.ng-invalid {
     background-color:#d9534f;
     border-color: #d43f3a;
-}
+}*/
 input.ng-valid {
     background-color:lightgreen;
 }
+
+
+.filme-detalhe{
+    padding-top: 8.5%;
+}
+
+.filme-detalhe p{
+    color: #fff;
+}
+
+footer{
+    background-color: #B9090B;
+}
+
+footer .row:first-of-type{
+    margin-top: 3%;
+}
+
+footer p{
+    color: #fff;
+}
+

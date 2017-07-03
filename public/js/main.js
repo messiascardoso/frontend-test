@@ -24,7 +24,7 @@ angular.module('netflix', ['ngResource','ui.router'])
                  .state('layout.list/:filmeId', {
                     url: '/list/:filmeId',
                     templateUrl: 'partials/filme-detalhe.html',
-                    controller: 'FilmesCtrl'
+                    controller: 'FilmeDetalheCtrl'
                 })
 
                 

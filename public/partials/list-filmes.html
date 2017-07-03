@@ -16,19 +16,19 @@
                         </select>
                 </div>
             </div>
-            <button type="submit" ng-disabled="formbusca.$invalid" class="btn btn-default">Buscar</button>
+            <button type="submit" ng-disabled="formbusca.$invalid" class="btn btn-primary">Buscar</button>
         </form>
     </div>
 </div>
 
-<div class="row list-filme-bg">
+<div class="row">
     <div class="container">
         <div class="page-header">
             <h1><small>Filmes: </small></h1>
         </div>
         <div class="col-sm-6 col-md-2" ng-repeat="filme in filmes">
             <div class="thumbnail">
-                <a ng-href="#/list/{{filme.show_id}}">
+                <a ng-href="#/list/{{filme.show_id}}" ng-click="getFilmeSelected(filme)">
                 <img src="{{filme.poster}}" alt="..." style="height: 250px; width: 100%; display: block;">
                 </a>
             </div>

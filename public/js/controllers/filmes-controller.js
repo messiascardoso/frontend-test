@@ -1,16 +1,16 @@
 angular.module('netflix').controller('FilmesCtrl',
-    function ($scope, $stateParams, Filme) {
+    function ($scope, $stateParams, Filme, SharedProperties) {
 
         $scope.lista = 'Quentin';
         $scope.query = {};
         $scope.filtro = '';
         $scope.filmes = [];
 
-        //  Lista de Ofertas
+        //  Lista filmes
         Filme.List($scope.lista)
             .success(function (data) {
                 $scope.filmes = data;
-                console.log(data);
+                // console.log(data);
             })
             .error(function (error) {
                 console.log(error)
@@ -36,21 +36,12 @@ angular.module('netflix').controller('FilmesCtrl',
 
         };
 
+        //Get filme selecionado
+        $scope.getFilmeSelected = function (filme) {
+            SharedProperties.setProperty(filme);
+        };
 
-      
-
-
-
-
-
-
-
-
-
-
-
-
-    })
+    });
 
 
 
