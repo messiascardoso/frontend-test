@@ -8,7 +8,7 @@ angular.module('netflix').service('SharedProperties',function(){
         setProperty: function(value){
            property = value;
         }
-    }
+    };
 
 });
 

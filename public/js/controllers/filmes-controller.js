@@ -3,7 +3,7 @@ angular.module('netflix').controller('FilmesCtrl',
 
         $scope.lista = 'Quentin';
         $scope.query = {};
-        $scope.filtro = '';
+        $scope.mensagem = '';
         $scope.filmes = [];
 
         //  Lista filmes
@@ -13,7 +13,7 @@ angular.module('netflix').controller('FilmesCtrl',
                 // console.log(data);
             })
             .error(function (error) {
-                console.log(error)
+                console.log(error);
             });
 
         // função para enviar o formulário depois que a validação estiver ok           
@@ -30,7 +30,8 @@ angular.module('netflix').controller('FilmesCtrl',
                         console.log($scope.filmes);
                     })
                     .error(function (error) {
-                        console.log(error)
+                          $scope.mensagem = 'Filme não localizado!';
+                        console.log(error);
                     });
             }
 
@@ -39,6 +40,10 @@ angular.module('netflix').controller('FilmesCtrl',
         //Get filme selecionado
         $scope.getFilmeSelected = function (filme) {
             SharedProperties.setProperty(filme);
+        };
+
+        $scope.error = function(){
+           $scope.mensagem = '';
         };
 
     });

@@ -1,3 +1,10 @@
+# Iniciar projeto 
+
+# 1 - npm install 
+# 2 - bower intall --allow-root  //se Linux  
+# 3 - npm run gulp ou gulp "se estiver como o gulp instalado"
+
+
 # Teste para vaga de frontend 
 
 Primeiramente você deve fazer um fork desse projeto para então iniciar os trabalhos, após o teste estar totalmente pronto você deve abrir uma Pull Request de volta para este repo e enviar um email para [labs@pismo.com.br](mailto:labs@pismo.com.br) confirmando a entrega.

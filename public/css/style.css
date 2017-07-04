@@ -1,5 +1,6 @@
 body{
     background-color: #333333;
+    font-family: 'Roboto', sans-serif;
 }
 
 .logo{
@@ -29,6 +30,7 @@ body{
 .list-filme{
     padding-top: 5%;
     padding-bottom: 1%;
+    color: #fff;
 }
 
 .page-header {
@@ -36,10 +38,6 @@ body{
     margin: 10px 0 20px;
     border-bottom: 1px solid #777;
 }
-
-
-
-
 /*input.ng-invalid {
     background-color:#d9534f;
     border-color: #d43f3a;
@@ -70,3 +68,43 @@ footer p{
     color: #fff;
 }
 
+ @media screen and (max-width: 768px) {
+   .list-filme {
+    padding-top: 15%;
+   }
+  
+   input.form-control{
+    margin-bottom: 10px;
+   }
+
+   .fa-3x {
+    font-size: 2em;
+    }
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+        background-color: #9e1a1a;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    footer a{
+        padding-left: 30px;
+    }
+
+    footer .lead {
+        margin-bottom: 5px;
+   }
+   button.navbar-toggle {
+    margin-right: 35px;
+   }
+      
+} /* ./@media screen and (max-width: 768px)*/
+
+.pad-buttom{
+    padding-bottom: 2%;
+}

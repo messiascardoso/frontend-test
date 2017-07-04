@@ -1,7 +1,7 @@
 angular.module('netflix').controller('FavoritosCtrl',
     function ($scope, $stateParams, Filme, SharedProperties) {
 
-       $scope.filmesFavoritos = JSON.parse(sessionStorage.getItem("Favoritos"))
+       $scope.filmesFavoritos = JSON.parse(sessionStorage.getItem("Favoritos"));
                    
         //Remove Favorito
         $scope.removeFavorito = function (favorito) {

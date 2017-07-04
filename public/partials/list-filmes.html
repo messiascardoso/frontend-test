@@ -2,28 +2,38 @@
 <div class="row list-filme">
     <div class="container">
         <form name="formbusca" ng-submit="submitForm(formbusca.$valid)" class="navbar-form navbar-left" role="search" novalidate>
+
             <div class="form-group">
-                <input type="text" name="nome" class="form-control" placeholder="Search" ng-model="query.nome" ng-required="true" ng-minlength="4">
+                <div class=" col-xs-12 col-sm-10">
+
+                    <input type="text" name="nome" class="form-control" placeholder="Digite um nome" ng-model="query.nome" ng-required="true"
+                        ng-minlength="4" ng-click="error()">
+                </div>
             </div>
             <!--<p ng-show="formbusca.query.$invalid && !formbusca.query.$pristine" class="help-block">Nome obrigatório</p>
                 <p ng-show="formbusca.query.$error.minlength" class="help-block">Username no mínimo 3 caracteres.</p>-->
             <div class="form-group ng-valid ng-invalid ng-pristine ng-dirty">
-                <div class="col-sm-10">
+                <div class="col-xs-4 col-sm-10">
+
                     <select name="categoria" class="form-control" required="required" ng-model="query.categoria" ng-required="true">
                             <option value="director">Diretor</option>
                             <option value="actor">Ator</option>
-                            <option value="title">Titulo</option>
+                            <option value="title" selected>Titulo</option>
                         </select>
                 </div>
             </div>
             <button type="submit" ng-disabled="formbusca.$invalid" class="btn btn-primary">Buscar</button>
         </form>
+        <div class="alert alert-danger" role="alert" ng-show="mensagem.length > 1" ng-click="error()">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span> {{mensagem}}
+        </div>
     </div>
 </div>
 
 <div class="row">
     <div class="container">
-        <div class="page-header">
+        <div class="page-header hidden-xs">
             <h1><small>Filmes: </small></h1>
         </div>
         <div class="col-xs-6 col-md-2" ng-repeat="filme in filmes">

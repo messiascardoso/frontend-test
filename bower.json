@@ -1,7 +1,7 @@
 {
   "name": "pismo-netflix",
   "description": "Lista de filmes",
-  "main": "index.js",
+  "main": "index.html",
   "authors": [
     "messiascardoso@gmail.com"
   ],

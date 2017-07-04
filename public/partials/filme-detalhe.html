@@ -9,15 +9,14 @@
           <p>Avaliação: {{filme.rating}}</p>
           <p>Ano: {{filme.release_year}}</p>
           <p>Tempo: {{filme.runtime}}</p>
+          <div class="alert alert-success" role="alert" ng-show="mensagem.length > 1" ng-click="CloseMensagem()">Salvo com sucesso!</div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 pad-buttom">
           <img src="{{filme.poster}}" class="img-fluid"> </div>
       </div>
         <button type="button" class="btn btn-primary" ng-click="setFavoritos(filme)">
           <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>  Salvar
         </button>
-        <button type="button" class="btn btn-danger">
-          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>  Remover
-        </button>
+       
     </div>
   </div>
